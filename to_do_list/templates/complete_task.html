@@ -6,15 +6,17 @@
     <thead>
         <tr>
             <th scope="col">Title</th>
+            <th scope="col">Description</th>
             <th scope="col">Status</th>
             <th scope="col">Details</th>
-            <th scope="col">Action</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
         {% for tsk in task %}
         <tr>
             <td>{{tsk.title}}</td>
+            <td>{{tsk.description}}</td>
             <td>{{tsk.status}}</td>
             <td><a class="btn btn-info btn-sm " href="{% url 'detailtask' tsk.id %}">Details</a></td>
             <td>
