@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body class="bg-secondary">
+    <table class="table table-bordered my-5 bg-light" style="width: 30%; margin: auto;">
+        <thead>
+            <tr>
+                <th scope="col">Title: {{task.title}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Created:</b> {{task.start_date}}</td>
+            </tr>
+            <tr>
+                <td><b>Last Edition:</b> {{task.end_date}}</td>
+            </tr>
+            <tr>
+                <td><b>Status:</b> {{task.status}}</td>
+            </tr>
+            <tr>
+                <td><b>Cetagory:</b> {{task.catagory}}</td>
+            </tr>
+            <tr>
+                <td><b>Edit Count:</b> {{task.edit_cnt}}</td>
+            </tr>
+            <tr>
+                <td><b>Last Edited:</b> {{task.last_update}}</td>
+            </tr>
+            <tr>
+                <td><h5><b>Description:</b></h5>{{task.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+{% endblock content %}
